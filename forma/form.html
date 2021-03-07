@@ -1,0 +1,203 @@
+<head>
+    <head>
+        <title>Forma</title>
+    </head>
+    <body>
+<!-- Text/Password Fields
+Create a page that contains a login form The form should contain username and password fields
+Add text to indicate which field is intended for what Login form should contain "forgot password" link
+When the user clicks on the link, they are redirected to a new "Reset password" page
+Reset page contains: an input text field that user uses to provide an email address
+"Send" link that redirects the user back to the login form -->
+        <form>
+            <p>Username:
+                <input type="text" name="username" size="15" maxlength="15">
+            </p>
+            <p>Password:
+                <input type="password" name="password" size="15" required>
+            </p>
+        </form>
+        <br>
+        <a href="backToForm.html">Forgot password</a>
+        <br>
+        <hr>
+<!-- Textarea/Radio/Checkbox
+Create a page that simulates a school quiz, containing multiple questions:
+The first question should contain multiple options out of which the student can select only one
+The second quiz question has multiple options out of which the user can select several
+The third question should require from user to insert some long text -->
+
+        <form>
+            <p>1. Koliko padeza postoji u srpskom jeziku:
+                <br>
+                <input type="radio" name="genre" value="7">7
+                <input type="radio" name="genre" value="5">5
+                <input type="radio" name="genre" value="10">10
+            </p>
+            <p>2. Koji meseci se nalaze u letu:
+                <br>
+                <input type="checkbox" name="service[]" value="jul">jul
+                <input type="checkbox" name="service[]" value="avgust">avgust
+                <input type="checkbox" name="service[]" value="decembar">decembar
+                <input type="checkbox" name="service[]" value="april">april
+            </p>
+            <p>3. Opisi najboljeg lika iz knjige "Na drini cuprija":
+                <br>
+                <textarea name="comments" cols="30" rows="10" placeholder="Upisi ovde...."></textarea>
+            </p>
+        </form>
+        <br>
+        <hr>
+<!-- Dropdown/Multiselect
+Create a page that contains three dropdown (selects) in one row
+Dropdowns are used by the user to provide the day, month and year of birth
+The page also contains multiselect box
+Multiselect box contains "categories" out of which the user can select several -->
+        
+    <form>
+        <p> Datum rodjenja:
+            <select name="dan">
+                <option value="dan">Dan</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+            </select>
+            <select>
+                <option value="mesec">Mesec</option>
+                <option value="januar">Januar</option>
+                <option value="februar">Februar</option>
+                <option value="mart">Mart</option>
+                <option value="april">April</option>
+                <option value="maj">Maj</option>
+                <option value="jun">Jun</option>
+                <option value="jul">Jul</option>
+                <option value="avgust">Avgust</option>
+                <option value="septembar">Septembar</option>
+                <option value="oktobar">Oktobar</option>
+                <option value="novemabr">Novembar</option>
+                <option value="decembar">Decembar</option>
+            </select>
+            <select>
+                <option value="godina">Godina</option>
+                <option value="2000">2000</option>
+                <option value="1999">1999</option>
+                <option value="1998">1998</option>
+                <option value="1997">1997</option>
+                <option value="1996">1996</option>
+                <option value="1995">1995</option>
+                <option value="1994">1994</option>
+                <option value="1993">1993</option>
+                <option value="1992">1992</option>
+                <option value="1991">1991</option>
+                <option value="1990">1990</option>
+            </select>
+        </p>
+        <p>Koje sportove volis:
+            <select name="sportovi[]" size="3" multiple="multiple">
+                <option value="fudbal" selected="selected">Fudbal</option>
+                <option value="kosarka">Kosarka</option>
+                <option value="rukomet" selected="selected">Rukomet</option>
+                <option value="bejzbol">Bejzbol</option>
+                <option value="hokej">Hokej</option>
+            </select>
+        </p>
+    </form>
+    <hr>
+<!-- Reset/Button/Hidden
+Create a form that contains multiple elements (text, textarea, radio)
+At the end of the form, there are two buttons:
+The first one is a reset button used for resetting form
+The second button contains an image and text inside it (it's a submit button -->
+    
+    <form>
+        <p>Koricnicko ime:
+            <input type="username" name="username">
+        </p>
+        <br>
+        <p>Ostavi komentar:
+            <br>
+            <textarea name="komentar" cols="20" rows="10" placeholder="Ostavi komentar..."></textarea>
+        </p>
+        <p>Ocena:
+            <input type="radio" name="gende" value="5">5
+            <input type="radio" name="gende" value="4">4
+            <input type="radio" name="gende" value="3">3
+            <input type="radio" name="gende" value="2">2
+            <input type="radio" name="gende" value="1">1
+        </p>
+        <input type="reset" value="Reset">
+        <button >
+            <p>Posalji</p>
+            <input name="submit" type="image" src="https://www.6amgroup.com/wp-content/uploads/2017/03/send-email.gif" width="100" height="50">
+        </button>
+    </form>
+    <hr>
+    <br>
+<!-- File input/Submit 
+Create a form used for submitting "Then VS Now" dieting/workout images and a description
+The form should contain two file input field both of the fields are file inputs
+They are used by the user for uploading the pictures of them and showing what they looked like 
+before they started working out, and how they look now
+The page has to have an area where the user can put a picture description
+At the end of the form, there should be a submit button with text "Send" that is used to submit the form
+The form is submitted on page "handle-upload.html" and the user is redirected to it upon pressing the button
+This page should contain just a "Form submitted successfully"! message -->
+
+    <form action="www.google.rs" method="post">
+        <p>Kako sam izgledala</p>
+            <input type="file" name="image">
+            <br>
+            <br>
+            <input type="submit" value="Upload">
+            <br>
+        <p>Kako sada izgledam</p>
+            <input type="file" name="image">
+            <br>
+            <br>
+            <input type="submit" value="Upload">
+            <br>
+         <p>Kako sam smrsala:
+             <br>
+            <textarea name="komentar" cols="30" rows="10"></textarea>
+         </p>
+         <button >
+            <a href="handle-upload.html">Posalji</a>
+        </button>
+    </form>
+    </body>
+</head>
+
+
+
+
+
+
+

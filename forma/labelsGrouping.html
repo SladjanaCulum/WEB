@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Labels/Grouping</title>
+</head>
+<body>
+    <!-- First group
+●	    Name of the group should be "Personal data"
+●	    The first field is for the name
+●	    The second one is for the email address
+●	    The third is for the phone number -->
+
+    <form>
+        <fieldset>
+            <h2>Personal data</h2>
+            <label for="fullname">Full name:</label>
+            <input type="text" name="fullname" id="fullname" required>
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+            <br><br>
+            <label for="phonenumber">Phone number:</label>
+            <input type="text" name="phonenumber" id="phonenumber" required> 
+            <br>
+        </fieldset>
+        <br>
+    <!-- Second group
+●	    Name of the group should be "Location"
+●	    It should contain fields for:
+        ○	City
+        ○	Street
+        ○	Street number -->
+        
+        <fieldset>
+            <h2>Location</h2>
+            <label for="city">City:</label>
+            <input type="text" name="city" id="city">
+            <br><br>
+            <label for="street">Street:</label>
+            <input type="text" name="street" id="street">
+            <br><br>
+            <label for="street_number">Street number:</label>
+            <input type="text" name="street_number" id="street_number">
+            <br>
+        </fieldset>
+        <br>
+    <!-- Third group
+●	    Name of the group should be "Event info"
+●	    The first element is dropdown containing the following options:
+        ○	birthday
+        ○	wedding (should be selected by default)
+        ○	company 
+●	    The second element is for getting number of expected guests and it’s an input type element
+●	    Placeholder is a number you choose  -->
+        
+        <fieldset>
+            <h2>Event info</h2>
+            <p>Choose event:</p>
+            <select name="event">
+                <option value="birthday">Birthday</option>
+                <option value="wedding" selected>Wedding</option>
+                <option value="company">Company</option>
+            </select>
+            <p>Please fulfil number of guests:</p>
+            <input type="element" placeholder="write here">
+        </fieldset>
+        <br><br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+        
+    </form>
+
+</body>
+</html>
