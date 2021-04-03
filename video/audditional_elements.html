@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog</title>
+</head>
+<body>
+
+<!--Create a page with two columns
+Width of the left column is 300px
+Right column stretches to cover the rest of the screen
+-->
+<!--Left column content
+Logo image with height set to 250px
+Under the logo, there should be a list of links
+One of the links should be "Contact"
+The link should link to "./contact.html" page
+-->
+<!--Right column content
+There should be two posts in form of groups
+The first group content:
+Title
+Embedded YouTube video
+The second group content:
+Title
+Video (HTML5) that you will find on the web
+-->
+    <h1>Blog</h1>
+    <table width="100%" border="1">
+        <tr>
+            <td width="300"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU1cO4UW_qL7Y9IIRia4sAjSpRiA2ypyBGLQ&usqp=CAU" alt="toyota" height="200">
+                <p>Kontaktirajte nas:</p>
+                <a href="./contact.html">Kontakt</a>
+            </td>
+            <td>
+                <div>
+                    <p>YouTube video</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1piFN_ioMVI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <p>Video o zeki</p>
+                    <video width="320" height="240" controls>
+                        <source src="./zeka.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </td>
+        </tr>
+    
+    </table>
+</body>
+</html>
