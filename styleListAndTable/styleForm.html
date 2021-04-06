@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <style>
+       .div1 {    
+            margin: auto 35%;    
+            border-spacing: 0px;
+            border-style: solid;
+            border-width: 1px; 
+            padding: 20px 40px 20px 40px;
+             
+            
+                      
+       } 
+      .div2 {
+          background-color: rgba(250, 244, 244, 0.7);
+          border-radius: 10px 0px;
+          padding: 20px 20px;
+          width: 300px;
+          opacity: 0.8;
+          
+          
+      }
+      h1 {
+        font-family: 'Trebuchet MS';
+        text-align: center;
+      }
+      span{
+          color: rgb(245, 159, 61);
+      }
+      input[type=text]{
+          font-family: 'Trebuchet MS';
+          width: 300px;
+          cursor:grab;
+      }
+      input[type=email]{
+          font-family: 'Trebuchet MS';
+          width: 300px;
+          cursor: grab;
+      }
+      label{
+          font-family: 'Trebuchet MS';
+          
+      }
+      input[type=submit]{
+          width: 310px;
+          background-color: red;
+          border-radius: 5px;
+          border: 0px;
+          height: 30px;
+          color: white;
+          cursor: url("slicica.png"), auto;
+      }
+    </style>
+</head>
+<body>
+    
+    <!-- Forms | Cursor
+Form Elements Style
+
+• Style the form until it looks like the form shown in the picture
+• Cursor
+• Set the cursor to look different when hovering over different
+form elements
+• Use a custom image for the cursor when hovering over the
+submit button -->
+        <div class="div1">
+            <div class="div2">
+            <h1>Form<span>Get</span></h1>
+            <hr>
+            <br>
+                <form>
+                    <label for="fname">First Name</label>
+                    <br>
+                    <input type="text" id="fname" name="firstname" placeholder="Full Name">
+                    <br><br>
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" id="email" name="email" placeholder="Email">
+                    <br><br>
+                    <label for="cnumber">Contact Number</label>
+                    <br>
+                    <input type="text" name="contactnumber" id="cnumber" placeholder="Contact Number">
+                    <br><br>
+                    <label for="address">Adress</label>
+                    <br>
+                    <input type="text" name="address" id="address" placeholder="Adress">
+                    <br><br>
+                    <input type="submit" value="submit">
+                </form>
+            </div>
+        </div>
+</body>
+</html>
