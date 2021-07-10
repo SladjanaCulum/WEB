@@ -1,0 +1,42 @@
+header{
+    position: relative;
+}
+
+.bg-color {
+    background-color: rgb(52,58,64);
+    color: white;
+    text-align: center;
+}
+
+#color{
+    color: white;
+    margin-left: 240px;
+    font-size: 22px;
+}
+
+.form-inline{
+    margin-right: 270px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.row {
+    margin-left: 200px;
+}
+
+#putSearch{
+    position: absolute;
+    z-index: 1;
+    border-bottom: 1px solid black;
+    text-align: left;
+    text-overflow: clip;
+    list-style: none;
+    background-color: white;
+    width: 200px;
+}
+
+#putSearch li{
+    color:black;
+}
