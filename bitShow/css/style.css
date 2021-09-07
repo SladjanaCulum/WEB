@@ -1,0 +1,40 @@
+header {
+    position: relative;
+    width: 100%;
+}
+.navbar-brand {
+    margin-left: 200px;
+}
+
+.container {
+    margin-left: 200px;
+}
+
+.d-flex {
+    margin-right: 220px;
+}
+#searchList {
+    position: absolute;
+    top: 50px;
+    background-color:#f0f0f0;
+    list-style: none;
+    padding-left: 0;
+   
+}
+#searchList li {
+    border-bottom: 1px solid black;
+    text-align: left;
+    text-overflow: clip;
+    
+}
+.card{
+    margin: 10px;
+}
+.car img{
+    width: 100%;
+}
+
+.noResult {
+    text-align: center;
+    font-size: large;
+}
